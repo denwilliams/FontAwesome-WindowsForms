@@ -1,4 +1,4 @@
-# Font Awesome + Windows Form
+# Font Awesome + Windows Forms
 
 This little project came about from needing to add a bunch of icon buttons to a Windows Forms project. I originally created a custom image-button control which worked well enough, but the buttons couldn't scale in size, we didn't have a designer to draw decent images, and everything we tried just looked tacky.
 
