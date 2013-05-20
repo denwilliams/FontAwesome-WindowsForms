@@ -22,6 +22,8 @@ The properties available are:
 * ActiveColor - the icon will be this color when hovered over.
 * ToolTipText - if set, a tooltip will be created for the icon with this text.
 
+If you want to use it as a button, just bind an event handler to the click event.
+
 **TODO:**
 
 * Make buttons selectable by keyboard (tab-key)
