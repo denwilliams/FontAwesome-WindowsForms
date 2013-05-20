@@ -14,7 +14,7 @@ namespace FontAwesomeIcons
         #region Constructors
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Icon" /> class using default values - star icon, normal color = gray, hover color = black.
+        /// Initializes a new instance of the <see cref="IconButton" /> class using default values - star icon, normal color = gray, hover color = black.
         /// </summary>
         public IconButton()
             : this(IconType.Star, 16, Color.DimGray, Color.Black)
@@ -23,7 +23,7 @@ namespace FontAwesomeIcons
         }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="Icon" /> class.
+        /// Initializes a new instance of the <see cref="IconButton" /> class.
         /// </summary>
         /// <param name="type">The icon type.</param>
         /// <param name="size">The size of the icon (number of pixels - 24 creates an icon 24x24px).</param>
@@ -306,7 +306,7 @@ namespace FontAwesomeIcons
         #region Static
 
         /// <summary>
-        /// Initializes the <see cref="Icon" /> class by loading the font from resources upon first use.
+        /// Initializes the <see cref="IconButton" /> class by loading the font from resources upon first use.
         /// </summary>
         static IconButton()
         {
