@@ -38,6 +38,7 @@
             this.iconButton7 = new FontAwesomeIcons.IconButton();
             this.iconButton8 = new FontAwesomeIcons.IconButton();
             this.iconButton9 = new FontAwesomeIcons.IconButton();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.iconButton4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconButton2)).BeginInit();
@@ -69,6 +70,7 @@
             this.iconButton4.TabIndex = 4;
             this.iconButton4.TabStop = false;
             this.iconButton4.ToolTipText = null;
+            this.iconButton4.Click += new System.EventHandler(this.iconButton4_Click);
             // 
             // iconButton3
             // 
@@ -174,12 +176,22 @@
             this.iconButton9.TabStop = false;
             this.iconButton9.ToolTipText = null;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(192, 241);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(63, 13);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Click Me -->";
+            // 
             // TestForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::FontAwesomeWinForms.Properties.Resources.bg;
             this.ClientSize = new System.Drawing.Size(347, 272);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.iconButton9);
             this.Controls.Add(this.iconButton8);
             this.Controls.Add(this.iconButton7);
@@ -218,6 +230,7 @@
         private FontAwesomeIcons.IconButton iconButton7;
         private FontAwesomeIcons.IconButton iconButton8;
         private FontAwesomeIcons.IconButton iconButton9;
+        private System.Windows.Forms.Label label1;
     }
 }
 

@@ -109,7 +109,6 @@ namespace FontAwesomeIcons
             get { return _activeColor; }
             set
             {
-                Debug.Print("Setting active brush color to " + value.ToString());
                 _activeColor = value;
                 ActiveBrush = new SolidBrush(value);
                 Invalidate();

@@ -15,5 +15,10 @@ namespace FontAwesomeWinForms
         {
             InitializeComponent();
         }
+
+        private void iconButton4_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("You clicked me");
+        }
     }
 }
