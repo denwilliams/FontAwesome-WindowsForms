@@ -62,7 +62,7 @@
             // 
             this.iconButton4.ActiveColor = System.Drawing.Color.Red;
             this.iconButton4.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton4.IconType = FontAwesomeIcons.IconType.Envelope;
+            this.iconButton4.IconType = FontAwesomeIcons.IconType.EnvelopeO;
             this.iconButton4.InActiveColor = System.Drawing.Color.Orange;
             this.iconButton4.Location = new System.Drawing.Point(255, 191);
             this.iconButton4.Name = "iconButton4";
@@ -76,7 +76,7 @@
             // 
             this.iconButton3.ActiveColor = System.Drawing.Color.Black;
             this.iconButton3.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton3.IconType = FontAwesomeIcons.IconType.Person;
+            this.iconButton3.IconType = FontAwesomeIcons.IconType.User;
             this.iconButton3.InActiveColor = System.Drawing.Color.DimGray;
             this.iconButton3.Location = new System.Drawing.Point(170, 179);
             this.iconButton3.Name = "iconButton3";
@@ -89,7 +89,7 @@
             // 
             this.iconButton2.ActiveColor = System.Drawing.Color.Black;
             this.iconButton2.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton2.IconType = FontAwesomeIcons.IconType.MusicNote;
+            this.iconButton2.IconType = FontAwesomeIcons.IconType.Music;
             this.iconButton2.InActiveColor = System.Drawing.Color.DimGray;
             this.iconButton2.Location = new System.Drawing.Point(195, 86);
             this.iconButton2.Name = "iconButton2";
@@ -141,7 +141,7 @@
             // 
             this.iconButton7.ActiveColor = System.Drawing.Color.Black;
             this.iconButton7.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton7.IconType = FontAwesomeIcons.IconType.MagnifyingGlass;
+            this.iconButton7.IconType = FontAwesomeIcons.IconType.Search;
             this.iconButton7.InActiveColor = System.Drawing.Color.DimGray;
             this.iconButton7.Location = new System.Drawing.Point(12, 0);
             this.iconButton7.Name = "iconButton7";
