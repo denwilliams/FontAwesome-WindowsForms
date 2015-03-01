@@ -3,6 +3,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Text;
 using System.Windows.Forms;
+using System.ComponentModel;
 
 namespace FontAwesomeIcons
 {
@@ -17,7 +18,7 @@ namespace FontAwesomeIcons
         /// Initializes a new instance of the <see cref="IconButton" /> class using default values - star icon, normal color = gray, hover color = black.
         /// </summary>
         public IconButton()
-            : this(IconType.Star, 16, Color.DimGray, Color.Black)
+            : this(IconType.Star, 16, Color.DimGray, Color.Black, false, null)
         {
 
         }
@@ -31,7 +32,7 @@ namespace FontAwesomeIcons
         /// <param name="hoverColor">Color to use when hovered over.</param>
         /// <param name="selectable">NOT YET IMPLEMENTED. If set to <c>true</c> the icon will be selectable using the keyboard (tab-key).</param>
         /// <param name="toolTip">The tool tip text to use. Leave as null to not use a tooltip.</param>
-        public IconButton(IconType type, int size, Color normalColor, Color hoverColor, bool selectable = false, string toolTip = null)
+        public IconButton(IconType type, int size, Color normalColor, Color hoverColor, bool selectable, string toolTip)
         {
             IconFont = null;
             BackColor = Color.Transparent;
@@ -84,6 +85,7 @@ namespace FontAwesomeIcons
         /// <value>
         /// The tool tip text.
         /// </value>
+        [Localizable(true)]
         public string ToolTipText
         {
             get { return _tooltip; }
@@ -92,11 +94,9 @@ namespace FontAwesomeIcons
                 _tooltip = value;
                 if (value != null)
                 {
-                    var buttonTt = new ToolTip();
-                    //buttonTt.ToolTipIcon = ToolTipIcon.Info;
-                    buttonTt.IsBalloon = true;
-                    buttonTt.ShowAlways = true;
-                    buttonTt.SetToolTip(this, value);
+                    _tT.IsBalloon = true;
+                    _tT.ShowAlways = true;
+                    _tT.SetToolTip(this, value);
                 }
             }
         }
@@ -188,7 +188,7 @@ namespace FontAwesomeIcons
         private string _tooltip = null;
         private Color _activeColor = Color.Black;
         private Color _inActiveColor = Color.Black;
-
+        private ToolTip _tT = new ToolTip();
         private string IconChar { get; set; }
         private Font IconFont { get; set; }
         private Brush IconBrush { get; set; } // brush currently in use
