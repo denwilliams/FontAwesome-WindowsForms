@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontAwesomeIcons", "FontAwesomeIcons\FontAwesomeIcons.csproj", "{56F662A1-D1E3-453F-BF74-9D8D03B6AFFC}"
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontAwesome", "FontAwesomeIcons\FontAwesome.csproj", "{56F662A1-D1E3-453F-BF74-9D8D03B6AFFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormsTest", "WinFormsTest\WinFormsTest.csproj", "{E269B6C7-178B-45F6-8E7B-D88C4D0EB130}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FontAwesomeTest", "WinFormsTest\FontAwesomeTest.csproj", "{E269B6C7-178B-45F6-8E7B-D88C4D0EB130}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
