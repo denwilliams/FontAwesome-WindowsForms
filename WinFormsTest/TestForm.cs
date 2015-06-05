@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
+using System.Drawing.Drawing2D;
 using System.Text;
 using System.Windows.Forms;
 
-namespace FontAwesomeWinForms
+namespace FontAwesome.Windows.Forms
 {
     public partial class TestForm : Form
     {
@@ -16,9 +16,21 @@ namespace FontAwesomeWinForms
             InitializeComponent();
         }
 
-        private void iconButton4_Click(object sender, EventArgs e)
+        private void TestForm_Load(object sender, EventArgs e)
         {
-            MessageBox.Show("You clicked me");
+            
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.pictureBox.Image = FontAwesome.Common.GetIcon(IconType.Certificate, 128, Color.White);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            var gadient = new LinearGradientBrush(new Point(0,0), new Point(127,127), Color.Blue, Color.Red );
+            this.pictureBox.Image = FontAwesome.Common.GetIcon(IconType.Money, 128, gadient);
+        }
+
     }
 }

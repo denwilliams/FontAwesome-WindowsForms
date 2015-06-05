@@ -1,4 +1,4 @@
-﻿namespace FontAwesomeIcons
+﻿namespace FontAwesome
 {
     public enum IconType
     {
