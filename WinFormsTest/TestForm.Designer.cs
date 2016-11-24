@@ -115,7 +115,7 @@
             // 
             this.iconButton5.ActiveColor = System.Drawing.Color.YellowGreen;
             this.iconButton5.BackColor = System.Drawing.Color.Transparent;
-            this.iconButton5.IconType = FontAwesomeIcons.IconType.Star;
+            this.iconButton5.IconType = FontAwesomeIcons.IconType.UserCircle;
             this.iconButton5.InActiveColor = System.Drawing.Color.OliveDrab;
             this.iconButton5.Location = new System.Drawing.Point(12, 86);
             this.iconButton5.Name = "iconButton5";
